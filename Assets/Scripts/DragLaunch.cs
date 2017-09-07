@@ -14,6 +14,11 @@ private Ball ball;
 		ball = GetComponent<Ball>();
 	}
 	
+	public void MoveStart (float amount) {
+		if (!ball.inPlay){
+			ball.transform.Translate (new Vector3(amount, 0, 0), Space.World);
+		}
+	}
 	public void DragStart (){
 		//Capture time & positon of drag start
 		dragStart = Input.mousePosition;
