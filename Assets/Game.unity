@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d3c07d8deb63140a16ea80c0256628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchSpeed: 200
+  launchVelocity: {x: 2, y: 0, z: 400}
 --- !u!82 &187127572
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1163,6 +1163,7 @@ GameObject:
   - component: {fileID: 1920624030}
   - component: {fileID: 1920624029}
   - component: {fileID: 1920624028}
+  - component: {fileID: 1920624033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1240,6 +1241,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1920624033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920624027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3d3f34c0a7e494d8eec19ce745ef73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 187127571}
 --- !u!1001 &2077593441
 Prefab:
   m_ObjectHideFlags: 0
