@@ -20,7 +20,7 @@ public class ActionMaster {
 		return currentAction;
 	}
 
-	public Action Bowl (int pins) {
+	private Action Bowl (int pins) {
 		if(pins < 0 || pins > 10) {
 			throw new  UnityException ("Invalid pins!");
 		}
