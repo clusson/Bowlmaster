@@ -44,7 +44,7 @@ public class PinSetter : MonoBehaviour {
 
 	public void RenewPins(){
 		GameObject newPins = Instantiate (pinSet);
-		newPins.transform.position += new Vector3(0, 209, 0);
+		newPins.transform.position += new Vector3(0, 30, 0);
 	}
 	void CheckStanding(){
 		//Update the lastStandingCount
