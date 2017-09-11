@@ -58,7 +58,7 @@ public class ActionMasterTest {
 	}
 
 	[Test]
-	public void T07YoutubeRollsEndInEndGame(){
+	public void T06YoutubeRollsEndInEndGame(){
 		int[] rolls = {8,2, 7,3, 3,4, 10, 2,8, 10, 10, 8,0, 10, 8,2};
 		foreach (int roll in rolls){
 			actionMaster.Bowl(roll);
@@ -67,7 +67,7 @@ public class ActionMasterTest {
 	}
 
 	[Test]
-	public void T08GameEndsAtBowl20 () {
+	public void T07GameEndsAtBowl20 () {
 		int[] rolls = {1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1};
 		foreach (int roll in rolls){
 			actionMaster.Bowl(roll);
@@ -75,4 +75,21 @@ public class ActionMasterTest {
 		Assert.AreEqual (endGame, actionMaster.Bowl(1));
 	}
 
+	[Test]
+	public void T08DarylBowl20Test () {
+		int[] rolls = {1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 10};
+		foreach (int roll in rolls){
+			actionMaster.Bowl(roll);
+		}
+		Assert.AreEqual (tidy, actionMaster.Bowl(5));
+	}
+
+	[Test]
+	public void T09BensBown20Test () {
+		int[] rolls = {1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 10};
+		foreach (int roll in rolls){
+			actionMaster.Bowl(roll);
+		}
+		Assert.AreEqual (tidy, actionMaster.Bowl(0));
+	}
 }
