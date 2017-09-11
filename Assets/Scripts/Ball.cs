@@ -29,14 +29,11 @@ public class Ball : MonoBehaviour {
 	}
 
 	public void Reset(){
-		Debug.Log("Resetting ball");
 		inPlay = false;
 		transform.position = ballStartPos;
+		transform.rotation = Quaternion.identity;
 		rigidBody.velocity = Vector3.zero;
 		rigidBody.angularVelocity = Vector3.zero;
-	}
-	// Update is called once per frame
-	void Update () {
-		
+		rigidBody.useGravity = false;
 	}
 }
