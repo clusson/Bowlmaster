@@ -188,11 +188,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1539256145924436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29d3c07d8deb63140a16ea80c0256628, type: 3}
+  m_Script: {fileID: 11500000, guid: a73e41496a7af7f4e836d657c4ddaf09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchVelocity: {x: 0, y: 0, z: 0}
-  inPlay: 0
 --- !u!114 &114974991907157018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d3c07d8deb63140a16ea80c0256628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchVelocity: {x: 0, y: 0, z: 0}
+  launchVelocity: {x: 0, y: 0, z: 400}
   inPlay: 0
 --- !u!135 &135370081890488488
 SphereCollider:
