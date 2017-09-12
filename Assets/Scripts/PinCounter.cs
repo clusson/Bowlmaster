@@ -18,7 +18,7 @@ public class PinCounter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		standingDisplay.text = CountStanding ().ToString ();
+		standingDisplay.text = CountStanding ().ToString();
 		
 		if (ballOutOfPlay) {
 			UpdateStandingCountAndSettle();
